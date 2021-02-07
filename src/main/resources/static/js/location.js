@@ -9,6 +9,7 @@ function findLocation(position) {
        $(".location").html(response.city + ", " + response.countryName);
     });
 
+    getWeather(lat, lon);
 }
 
 if(navigator.geolocation) {
